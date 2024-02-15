@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: cadetblue;
+            color: white;
+            font: normal 20pt Arial;
+        }
+
+    </style>
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Exibe operações entre dois números</h1>
+
+    <script>
+        var prim = parseFloat(prompt('Digite o primeiro número: '))
+        var segn = parseFloat(prompt('Digite o segundo número: '))
+
+        console.log('Os números são ' + prim+ (', ') +segn)
+        var soma = (prim+segn)
+        var subtr = (prim-segn)
+        var mult = (prim*segn)
+        var divi = (prim/segn)
+
+        console.log('O resultado da soma é ' + soma)
+        console.log(typeof(soma))
+        // alert('O resultado da soma é ' + soma)
+        console.log('O resultado da subtração é ' + subtr)
+        console.log(typeof(subtr))
+        // alert('O resultado da subtração é ' + subtr)
+        console.log('O resultado da multiplicação é ' + mult)
+        console.log(typeof(mult))
+        // alert('O resultado da multiplicação é ' + mult)
+        console.log('O resultado da divisão é ' + divi)
+        console.log(typeof(divi))
+        // alert('O resultado da divisão é ' + divi)
+
+        // alert('O resultado da soma é '+soma+ '\n O resultado da subtração é ' +subtr+ '\n O resultado da multiplicação é ' +mult+ '\n O resultado da divisão é ' +divi)
+
+        document.write('<p> O primeiro número é ' + prim + '</p>')
+        document.write('<P>O segundo número é ' + segn + '</p>')
+
+        document.write(` primeiro número = ${prim} e segundo número =  ${segn} <br>`)
+        
+        document.write(`Resultado da soma = ${soma} <br>`)
+        document.write(`resultado da subtração = ${subtr} <br>`)
+        document.write(`resultado da multiplicação = ${mult} <br>`)
+        document.write(`resultado da divisão = ${divi} <br>`)
+    </script>
+</body>
+</html>
