@@ -1,0 +1,20 @@
+header,main{
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+}
+
+body{
+    background-color: beige;
+}
+
+button{
+    width: 95px;
+    border-radius: 5em;
+    transition-duration: calc(0.3s);
+}
+
+button:hover{
+    background-color: #04AA6D;
+    color: white;
+}
