@@ -1,39 +1,66 @@
 const ligar = document.getElementById('ligar')
 const desligar = document.getElementById('desligar')
 const lampada = document.getElementById('lamp')
-const restaurar = document.getElementById('restaurar')
+const rest = document.getElementById('rest')
+const int = document.getElementById('int')
+const texto = document.getElementById('texto')
 
 function estaquebrada(){
     return lampada.src.indexOf('quebrada') > -1
-    //isso retorna True ou False
+    //retorna true ou false
 }
 
-function lampLigada(){
+function inte(){
+    return lampada.src.indexOf('desligada') > -1
+}
+
+//interruptor
+function inter(){
+    if(!estaquebrada()){
+        if(inte()){
+        lampada.src = 'img/ligada.jpg'
+        texto.innerHTML = 'A lâmpada está ligada'
+      }
+        else{
+        lampada.src = 'img/desligada.jpg'
+        texto.innerHTML = 'A lâmpada está desligada'
+      }
+    }
+}
+//interruptor
+
+
+function lampligada(){
     if(!estaquebrada()){
         lampada.src = 'img/ligada.jpg'
-    }
+        texto.innerHTML = 'A lâmpada está ligada'
+    }  
 }
 
-function lampDesligada(){
+function lampdesligada(){
     if(!estaquebrada()){
         lampada.src = 'img/desligada.jpg'
-    }
+        texto.innerHTML = 'A lâmpada está desligada'
+    } 
 }
 
-function quebrada(){
+function lampquebrada(){
     lampada.src = 'img/quebrada.jpg'
+    texto.innerHTML = 'A lâmpada está quebrada'
 }
 
-function lamprestaurar(){
+function restaurar(){
     lampada.src = 'img/desligada.jpg'
+    texto.innerHTML = 'A lâmpada foi restaurada'
 }
 
-ligar.addEventListener('click',lampLigada)
-desligar.addEventListener('click',lampDesligada)
+int.addEventListener('click',inter)
+ligar.addEventListener('click',lampligada)
+desligar.addEventListener('click',lampdesligada)
 
-lampada.addEventListener('mouseover',lampLigada)
-lampada.addEventListener('mouseleave',lampDesligada)
+lampada.addEventListener('mouseover',lampligada)
+lampada.addEventListener('mouseleave',lampdesligada)
 
-lampada.addEventListener('dblclick',quebrada)
+lampada.addEventListener('dblclick', lampquebrada)
 
-restaurar.addEventListener('click',lamprestaurar)
+rest.addEventListener('click', restaurar)

@@ -9,7 +9,7 @@ body{
 }
 
 button{
-    width: 95px;
+    width: 110px;
     border-radius: 5em;
     transition-duration: calc(0.3s);
 }
