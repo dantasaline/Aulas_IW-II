@@ -3,11 +3,12 @@ main{
     align-items: center;
     display: flex;
     flex-direction: column;
+    margin-top: 2em;
 }
 
 .calc{
     padding: 4em;
-    background-color: rgb(207, 207, 207);
+    background-color: rgb(210, 201, 211);
     border-radius: 3em;
     border-width: 1px;
     border-style: dashed;
@@ -49,4 +50,11 @@ button:hover{
     background-color: rgb(140, 0, 255);
     box-shadow: 0 0 2em rgb(140, 0, 255);
     color: white;
+}
+
+h1{
+    border-style: dotted;
+    border-width: 5px;
+    border-color: white ;
+    width: 6.3em;
 }
