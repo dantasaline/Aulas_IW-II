@@ -1,4 +1,6 @@
 var result = document.getElementById('resultado')
+var num1 = document.getElementById('n1')
+var num2 = document.getElementById('n2')
 
 function pegasoma(){
     var num1 = Number(document.getElementById('n1').value)
@@ -32,8 +34,8 @@ function pegadivi(){
     console.log('Resultado da Divisão: ', divi)
 }
 
-function limpa(){
+function limp(){
     result.innerHTML = '0'
-    n1.innerHTML = ''
-    n2.innerHTML = ''
+    document.getElementById('n1').value = ''
+    document.getElementById('n2').value = ''
 }
