@@ -1,0 +1,7 @@
+#diag{
+    text-decoration: underline;
+}
+
+input, select{
+    margin-top: 1em;
+}
