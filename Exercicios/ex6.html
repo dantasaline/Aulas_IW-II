@@ -15,7 +15,12 @@
             var conttroco = pagar-valor
             itens.innerHTML = "Você irá comprar "+prod+" por R$"+valor
             recebido.innerHTML = "Você deu R$"+pagar
-            troco.innerHTML = "Você irá receber de troco R$"+conttroco
+            if (conttroco <= 0){
+                troco.innerHTML = "Você não tem troco para receber"
+            }
+            else{
+                troco.innerHTML = "Você irá receber de troco R$"+conttroco
+            }
         }
     </script>
     <main>
