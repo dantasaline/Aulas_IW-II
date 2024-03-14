@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reajuste salarial</title>
+</head>
+<body>
+    <script>
+        function reajuste(){
+            var nome = prompt("Qual é o nome do funcionário? ")
+            var salario = Number(prompt("Qual o salário de "+nome+"? "))
+            var ajuste = Number(prompt("O salário de "+nome+" vai ser reajustado em qual quantidade? "))
+
+            var aumento = ajuste/100*salario
+            var reajusta = aumento+salario
+
+            nom.innerHTML = nome+" recebeu um aumento salarial"
+            sal.innerHTML = "O salário atual era R$"+salario
+            mais.innerHTML = "Com um aumento de "+ajuste+"%, o salário vai aumentar R$"+aumento
+            fim.innerHTML = nome+" vai passar a ganhar R$"+reajusta+"."
+        }
+    </script>
+    <main>
+        <h1>Reajuste salarial</h1>
+        <button onclick="reajuste()">Reajustar</button>
+        <h1><strong id="nom"> </strong></h1>
+        <p id="sal"> </p>
+        <p id="mais"> </p>
+        <p id="fim"> </p>
+    </main>
+</body>
+</html>

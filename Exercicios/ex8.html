@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhaskara</title>
+</head>
+<body>
+    <script>
+        function calcular(){
+            var a = Number(prompt("Digite o valor de a: "))
+            var b = Number(prompt("Digite o valor de b: "))
+            var c = Number(prompt("Digite o valor de c: "))
+            num.innerHTML = a+"x²+"+b+"x+"+c+"=0"
+            conta.innerHTML = "Δ = "+b+"² – 4."+a+"."+c
+            var resultado = b*b - 4*a*c
+            resul.innerHTML = "O valor calculado foi "+resultado
+        }
+    </script>
+    <main>
+        <h1>Resolvendo bhaskara</h1>
+        <button onclick="calcular()">Calcular</button>
+        <p>Considerando uma equação no formato <strong id="num">ax²+bx+c=0</strong>,</p>
+        <p >aperte o botão acima para calcular o valor de <strong id="conta">Δ</strong></p>
+        <p id="resul"> </p>
+    </main>
+</body>
+</html>
