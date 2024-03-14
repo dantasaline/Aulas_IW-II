@@ -8,11 +8,10 @@ main{
 
 .calc{
     padding: 4em;
-    background-color: rgb(210, 201, 211);
-    border-radius: 3em;
-    border-width: 1px;
-    border-style: dashed;
-    border-color: black;
+    background-color: rgb(242, 234, 243);
+    border-width: 15px;
+    border-style: solid;
+    border-color: rgb(201, 187, 218);
 }
 
 .opera{

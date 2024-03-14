@@ -14,7 +14,6 @@ function inte(){
     return lampada.src.indexOf('desligada') > -1
 }
 
-//interruptor
 function inter(){
     if(!estaquebrada()){
         if(inte()){
@@ -27,8 +26,6 @@ function inter(){
       }
     }
 }
-//interruptor
-
 
 function lampligada(){
     if(!estaquebrada()){

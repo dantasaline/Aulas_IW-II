@@ -5,26 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <title>Calculadora de IMC</title>
 </head>
 <body>
     <h1>Calculadora de IMC</h1>
-    Informe sua altura
-    <input id="altura" name="altura" value="" type="number">
-    <br>
-    Informe seu peso
-    <input id="peso" name="peso" value="" type="number">
-    <br>
-    Informe seu sexo
-    <select name="sexo" id="sexo">
-        <option value="masculino">Masculino</option>
-        <option value="feminino">Feminino</option>
-    </select>
-    <button id="calculo" onclick="calculo()">Calcular</button>
-    <p>Seu IMC é de <strong id="resultado">0</strong></p>
-    Diagnóstico:
-    <p id="diag"> </p>
-    <button id="limpa" onclick="limp()">Limpar</button>
+    <div class="conteiner">
+        <p>Informe sua altura</p> 
+        <input id="altura" name="altura" value="" type="number">
+        <br>
+
+        <p>Informe seu peso</p> 
+        <input id="peso" name="peso" value="" type="number">
+        <br>
+
+        <p>Informe seu sexo</p>
+        <select name="sexo" id="sexo">
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+        </select>
+
+        <button id="calculo" onclick="calculo()">Calcular</button>
+
+        <p>Seu IMC é de <strong id="resultado">0</strong></p>
+        <p id="diag"> </p>
+        
+        <button id="limpa" onclick="limp()">Limpar</button>
+    </div>
     
     <script src="js/script.js"></script>
 </body>
