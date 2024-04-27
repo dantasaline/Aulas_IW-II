@@ -1,0 +1,27 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container{
+    background-color: blanchedalmond;
+    padding: 1em;
+    border-style: dotted;
+    border-radius: 0.01px;
+    border-color: darkkhaki;
+    margin: 1em;
+}
+
+#enviar{
+    background-color: goldenrod;
+    border-color: gold;
+    margin: 1em;
+}
+
+.form-control, label{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+h1{
+    text-align: center;
+}
