@@ -2,6 +2,7 @@ $(document).ready(function() {
     const mario = $('.mario')
     const pipe = $('.pipe')
     var restaura = $('#rest')
+    const musica = $('#musica')
 
     const jump = () => {
         mario.addClass('jump')
@@ -24,9 +25,12 @@ $(document).ready(function() {
             mario.css('width', '135px')
             mario.css('marginLeft', '50px')
             restaura.css('display', 'block')
+            musica[0].play()
             clearInterval(loop)
         }
     }, 10);
+
+    $('')
 
     $('#rest').click(function(){
         location.reload()
