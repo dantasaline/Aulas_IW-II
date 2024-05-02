@@ -46,6 +46,13 @@ body{
     animation: jump 500ms ease-out;
 }
 
+#rest{
+    margin-top: 15px;
+    margin-left: 47%;
+    padding: 10px;
+    display: none;
+}
+
 @keyframes pipe-animation{
 
     from{
