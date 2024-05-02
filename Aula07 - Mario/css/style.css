@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+body{
+    background-image: url(../img/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
 .Game-Board{
     border-color: red;
     border-style: solid;
@@ -14,7 +20,7 @@
     margin: 0 auto;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(#eb8787, #E0F6FF);
+    background: linear-gradient(#87cbeb, #E0F6FF);
 }
 
 .clouds{
