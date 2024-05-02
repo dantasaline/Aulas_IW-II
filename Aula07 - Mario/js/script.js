@@ -19,7 +19,7 @@ $(document).ready(function() {
             pipe.css('left', `${pipePosit}px`);
             mario.css('animation', 'none');
             mario.css('bottom', `${marioPosit}px`);
-            mario.attr('src', 'img/game-over.png');
+            mario.attr('src', 'img/yoshim.webp');
             mario.css('width', '75px');
             mario.css('marginLeft', '50px');
             clearInterval(loop);

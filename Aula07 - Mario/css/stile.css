@@ -1,51 +1,39 @@
-
-body{
-    background-image: url("https://img.freepik.com/vetores-premium/textura-de-parede-de-tijolos-castanhos-parede-de-tijolos_146714-3037.jpg?size=626&ext=jpg&ga=GA1.1.1700460183.1708128000&semt=ais");
-}
-
 *{
-
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .Game-Board{
-
-width: 80%;
-height: 500px;
-border-bottom: 15px solid green;
-margin: 0 auto;
-position: relative;
-overflow: hidden;
-background: linear-gradient(#87CEEB, #E0F6FF);
-
+    border-color: red;
+    border-style: solid;
+    border-radius: 1px;
+    width: 80%;
+    height: 500px;
+    border-bottom: 15px solid green;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#eb8787, #E0F6FF);
 }
 
 .clouds{
-
     position: absolute;
     width: 550px;
     animation: clouds 20s infinite linear;
-
 }
 
 .pipe{
-
     position: absolute;
     bottom: 0;
-    width: 80px;
-   animation: pipe-animation 1.5s infinite linear;
-
+    width: 110px;
+    animation: pipe-animation 1.5s infinite linear;
 }
 
 .mario{
-
     width: 150px;
     position: absolute;
     bottom: 0;
-   
 }
 
 .jump{
