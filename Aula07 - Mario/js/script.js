@@ -20,7 +20,7 @@ $(document).ready(function() {
             mario.css('animation', 'none');
             mario.css('bottom', `${marioPosit}px`);
             mario.attr('src', 'img/yoshim.webp');
-            mario.css('width', '75px');
+            mario.css('width', '135px');
             mario.css('marginLeft', '50px');
             clearInterval(loop);
         }
