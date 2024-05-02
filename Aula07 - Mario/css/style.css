@@ -11,7 +11,7 @@ body{
 }
 
 .Game-Board{
-    border-color: red;
+    border-color: black;
     border-style: solid;
     border-radius: 1px;
     width: 80%;
